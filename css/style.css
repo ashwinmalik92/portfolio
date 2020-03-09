@@ -49,15 +49,15 @@ header {
     list-style: none;
 }
 .nav_tab {
-    padding: .5vh 0;
+    padding: .75vh 0;
 }
 .nav_tab a {
     color: var(--more-white);
     font-size: 1.5em;
     text-decoration: none;
 }
-.nav_tab a:hover, a:focus {
-    color: var(--less-accent);
+.nav_tab a:hover, .nav_tab a:focus, .nav_select {
+    color: var(--medium-accent);
     text-decoration: underline;
 }
 a.skip {
@@ -79,6 +79,7 @@ a.skip:focus {
 
 /* BODY STYLES */
 main {
+    padding: 0 2%;
     min-height: 75vh;
 }
 h1, h2, h3, h4 {
@@ -98,13 +99,39 @@ h4 {
 }
 main p {
     font-size: 1.25em;
+    line-height: 1.25em;
 }
-
-.welcome {
-    background: var(--more-black);
+#welcome {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.card-large {
     border-radius: 20px;
-    margin: -10px;
     padding: 5%;
+}
+.shadow {
+    -webkit-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.bg-dark {
+    color: var(--more-white);
+    background: var(--more-black);
+}
+.bg-light {
+    color: var(--more-black);
+    background: var(--less-white);
+}
+.bg-accent-medium {
+    color: var(--more-black);
+    background: var(--medium-accent);
+}
+.bg-accent-less {
+    color: var(--more-black);
+    background: var(--less-accent);
+}
+.strike {
+    text-decoration: line-through;
 }
 
 /* FOOTER STYLES */
@@ -131,8 +158,9 @@ footer {
     width: 35px;
 }
 
-
-@keyframes scaleIn {
+/* HERO STYLES */
+/*** Adapted from: https://www.kirupa.com/animations/creating_pulsing_circle_animation.htm ***/
+@keyframes pulse {
   from {
     transform: scale(.5, .5);
     opacity: .5;
@@ -143,15 +171,22 @@ footer {
   }
 }
 .hero {
+    margin-top: 30px;
+    padding: 0 2%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 #hero-img-container {
+    margin-top: -150px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+.hero-item {
+    text-align: center;
 }
 .circle {
     border-radius: 50%;
@@ -160,7 +195,7 @@ footer {
     height: 400px;
     position: absolute;
     opacity: 0;
-    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    animation: pulse 4s infinite cubic-bezier(.36, .11, .89, .32);
     z-index: -10;
 }
 .hero-img {
@@ -172,12 +207,19 @@ footer {
     width: 250px;
 }
 
-
-
-
-
-
-
+/* GRID STYLES */
+.grid {
+    display:                grid;
+    grid-template-columns:  1fr 1fr;
+    grid-column-gap:        10px;
+    grid-row-gap:           10px;
+    /*grid-template-rows:     30px auto auto auto auto auto 100px;*/
+    margin-bottom:          30px;
+}
+.grid-card {
+    border-radius: 15px;
+    padding: 10%;
+}
 
 /* TABLET SIZES AND ABOVE */
 @media screen and (min-width: 768px) {
@@ -189,11 +231,23 @@ footer {
         display: inline;
     }
     .nav_tab a {
-        padding: .25vh 10px;
+        padding: .25vh 20px;
     }
     main {
         min-height: 87vh;
-        padding: 0 2%;
+    }
+    .hero {
+        margin-top: 0;
+        flex-direction: row;
+    }
+    .hero-item {
+        text-align: left;
+    }
+    #hero-img-container {
+        margin-top: 0;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .footer_content {
         flex-direction: row;
