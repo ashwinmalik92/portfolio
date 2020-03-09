@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76705409-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-76705409-2');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="images/brand.png">
@@ -23,19 +31,36 @@
       </nav>
     </header>
     <main id="skip">
-      <div>
-        <h1>Hello! It's paw-some to meet you!</h1>
+      <div class="hero">
+        <div class="hero-item">
+          <h1>Hello there!</h1>
+          <h2>It's paw-some to meet you~</h2>
+        </div>
+        <div class="hero-item" id="hero-img-container">
+          <div class="hero-img">
+            <img src="images/cutout.png">
+          </div>
+          <div class="circle" style="animation-delay: 0s"></div>
+          <div class="circle" style="animation-delay: 1s"></div>
+          <div class="circle" style="animation-delay: 2s"></div>
+          <div class="circle" style="animation-delay: 3s"></div>
+        </div>
       </div>
-      <div>
+      <div class="welcome">
+        <h2>My name is Winston.</h2>
+        <p>Welcome to my website!</p>
+      </div>
+      
 
-      </div>
+
+
     </main>
     <footer>
       <div class="footer_content">
         <p class="footer_item">&copy; Ashwin Malik 2020<br>Crafted with love for my cat, Winston - and SI 539 at UMich.</p>
         <div class="footer_item">
-          <a href="https://github.com/ashwinmalik92/winston"><img class="footer_img" src="images/github.png" class="logo" alt="GitHub logo"></a>
-          <a href="https://www.instagram.com/serwinstongram/"><img class="footer_img" src="images/instagram.png" class="logo" alt="Instagram logo"></a>
+          <a href="https://github.com/ashwinmalik92/winston"><img class="footer_img" src="images/github.png" alt="GitHub logo"></a>
+          <a href="https://www.instagram.com/serwinstongram/"><img class="footer_img" src="images/instagram.png" alt="Instagram logo"></a>
         </div>
       </div>
     </footer>
