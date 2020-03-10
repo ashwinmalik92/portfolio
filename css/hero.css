@@ -1,0 +1,48 @@
+/* HERO STYLES */
+/*** Adapted from: https://www.kirupa.com/animations/creating_pulsing_circle_animation.htm ***/
+@keyframes pulse {
+    from {
+        transform: scale(.5, .5);
+        opacity: .5;
+    }
+    to {
+        transform: scale(2.5, 2.5);
+        opacity: 0;
+    }
+}
+.hero {
+    margin-top: 30px;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#hero-img-container {
+    margin-top: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hero-item {
+    text-align: center;
+}
+.circle {
+    border-radius: 50%;
+    background-color: var(--less-accent);
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    opacity: 0;
+    animation: pulse 4s infinite cubic-bezier(.36, .11, .89, .32);
+    z-index: -10;
+}
+.hero-img {
+    z-index: -5;
+}
+.hero-img img {
+    margin-top: 200px;
+    margin-left: 40px;
+    width: 250px;
+}

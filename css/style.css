@@ -26,10 +26,6 @@ a:hover, a:focus {
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
 }
-*:focus{
-    border: 2px solid var(--more-white);
-    border-radius: 5px;
-}
 
 /* HEADER STYLES */
 #logo {
@@ -55,16 +51,26 @@ header {
     color: var(--more-white);
     font-size: 1.5em;
     text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
 }
 .nav_tab a:hover, .nav_tab a:focus, .nav_select {
     color: var(--medium-accent);
     text-decoration: underline;
 }
+.nav_tab a:focus {
+    border: 2px solid var(--more-white);
+    border-radius: 10px;
+}
 a.skip {
+    font-size: 1.25em;
+    color: var(--more-black);
     background: var(--more-white);
-    top: -40px;
+    top: -50px;
     left: 10px;
-    padding: 6px;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 8px;
     position: absolute;
     z-index: 1;
     text-decoration: none;
@@ -73,8 +79,14 @@ a.skip {
     box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
 }
 a.skip:focus {
-    top: 10px;
-    color: var(--more-black);
+    top: 15px;
+    border: 2px solid var(--more-black);
+}
+a.skip:hover {
+    background: var(--less-accent);
+    -webkit-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* BODY STYLES */
@@ -89,7 +101,7 @@ h1 {
     font-size: 4em;
 }
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 h3 {
     font-size: 2em;
@@ -100,6 +112,9 @@ h4 {
 main p {
     font-size: 1.25em;
     line-height: 1.25em;
+}
+.page-heading {
+    margin: 20px 0 30px 0;
 }
 #welcome {
     margin-top: -20px;
@@ -137,7 +152,7 @@ main p {
 /* FOOTER STYLES */
 footer {
     padding: 2vh 4%;
-    background: var(--more-accent);
+    background: var(--medium-accent);
     color: var(--more-black);
     -webkit-box-shadow: 0 -4px 10px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 -4px 10px 2px rgba(0, 0, 0, 0.3);
@@ -153,58 +168,25 @@ footer {
     margin-bottom: 15px;
     text-align: center;
 }
+.footer_item a {
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
 .footer_img {
-    margin: 0 5px;
+    padding: 5px;
     width: 35px;
 }
-
-/* HERO STYLES */
-/*** Adapted from: https://www.kirupa.com/animations/creating_pulsing_circle_animation.htm ***/
-@keyframes pulse {
-  from {
-    transform: scale(.5, .5);
-    opacity: .5;
-  }
-  to {
-    transform: scale(2.5, 2.5);
-    opacity: 0;
-  }
+.footer_item a:hover, .footer_item a:focus {
+    background: var(--more-accent);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
 }
-.hero {
-    margin-top: 30px;
-    padding: 0 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-#hero-img-container {
-    margin-top: -150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.hero-item {
-    text-align: center;
-}
-.circle {
-    border-radius: 50%;
-    background-color: var(--less-accent);
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    opacity: 0;
-    animation: pulse 4s infinite cubic-bezier(.36, .11, .89, .32);
-    z-index: -10;
-}
-.hero-img {
-    z-index: -5;
-}
-.hero-img img {
-    margin-top: 200px;
-    margin-left: 40px;
-    width: 250px;
+.footer_item a:focus {
+    border: 2px solid var(--more-white);
 }
 
 /* GRID STYLES */
@@ -215,6 +197,9 @@ footer {
     grid-row-gap:           10px;
     /*grid-template-rows:     30px auto auto auto auto auto 100px;*/
     margin-bottom:          30px;
+}
+.grid-sm {
+    grid-template-columns:  auto;
 }
 .grid-card {
     border-radius: 15px;
@@ -248,6 +233,12 @@ footer {
     }
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-img img {
+        min-width: 100%;
+        max-width: unset;
+        min-height: unset;
+        max-height: 100%;
     }
     .footer_content {
         flex-direction: row;
