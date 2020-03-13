@@ -31,6 +31,7 @@
     background-position: center;
 }
 .flip-back {
+    padding: 0 10%;
     background: var(--more-black);
     transform: rotateY(180deg);
 }
@@ -48,47 +49,47 @@
     text-align: center;
 }
 #img-01 {
-    background-image: url('../images/gallery-01.jpg');
+    background-image: url('../images/gallery/gallery-01.jpg');
 }
 #img-02 {
-    background-image: url('../images/gallery-02.jpg');
+    background-image: url('../images/gallery/gallery-02.jpg');
 }
 #img-03 {
-    background-image: url('../images/gallery-03.jpg');
+    background-image: url('../images/gallery/gallery-03.jpg');
 }
 #img-04 {
-    background-image: url('../images/gallery-04.jpg');
+    background-image: url('../images/gallery/gallery-04.jpg');
 }
 #img-05 {
-    background-image: url('../images/gallery-05.jpg');
+    background-image: url('../images/gallery/gallery-05.jpg');
 }
 #img-06 {
-    background-image: url('../images/gallery-06.jpg');
+    background-image: url('../images/gallery/gallery-06.jpg');
 }
 #img-07 {
-    background-image: url('../images/gallery-07.jpg');
+    background-image: url('../images/gallery/gallery-07.jpg');
 }
 #img-08 {
-    background-image: url('../images/gallery-08.jpg');
+    background-image: url('../images/gallery/gallery-08.jpg');
 }
 #img-09 {
-    background-image: url('../images/gallery-09.jpg');
+    background-image: url('../images/gallery/gallery-09.jpg');
 }
 #img-10 {
-    background-image: url('../images/gallery-10.jpg');
+    background-image: url('../images/gallery/gallery-10.jpg');
 }
 #img-11 {
-    background-image: url('../images/gallery-11.jpg');
+    background-image: url('../images/gallery/gallery-11.jpg');
 }
 #img-12 {
-    background-image: url('../images/gallery-12.jpg');
+    background-image: url('../images/gallery/gallery-12.jpg');
 }
 #img-13 {
-    background-image: url('../images/gallery-13.jpg');
+    background-image: url('../images/gallery/gallery-13.jpg');
 }
 #img-14 {
-    background-image: url('../images/gallery-14.jpg');
+    background-image: url('../images/gallery/gallery-14.jpg');
 }
 #img-15 {
-    background-image: url('../images/gallery-15.jpg');
+    background-image: url('../images/gallery/gallery-15.jpg');
 }
