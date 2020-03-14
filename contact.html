@@ -31,17 +31,24 @@
         </nav>
     </header>
     <main id="skip">
-        <div class="page-heading">
-            <h1>Contact Winston</h1>
-            <h2>Fill out this form if you'd like to get in confursation. I'll respond when I feel like it.</h2>
-        </div>
-        <div class="form">
-            <form action="https://formspree.io/xvorjepj" method="POST">
-                <input type="text" name="name">
-                <input type="email" name="_replyto">
-                <input type="submit" value="Send">
-            </form>
-        </div>
+        <section id="loader">
+            <div class="eye shadow"></div>
+            <div class="eye shadow"></div>
+        </section>
+        <section id="content" class="animate-bottom">
+            <div class="page-heading">
+                <h1>Contact Winston</h1>
+                <h2>Fill out this form if you'd like to get in confursation. I'll respond when I feel like it.</h2>
+            </div>
+            <div class="form">
+                <form action="https://formspree.io/xvorjepj" method="POST">
+                    <input type="text" name="name">
+                    <input type="email" name="_replyto">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <button type="button" class="button-scroll shadow" onclick="topScroll()" title="Back to Top">Back to Top</button>
+        </section>
     </main>
     <footer>
         <div class="footer_content">
@@ -52,5 +59,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/custom.js"></script>
 </body>
 </html>

@@ -150,6 +150,31 @@ main p {
 }
 
 /* FOOTER STYLES */
+button {
+    color: var(--more-white);
+    background: var(--more-black);
+    padding: 15px;
+    font-size: 1.25em;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover, button:focus {
+    color: var(--more-black);
+    background: var(--more-white);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+button:focus {
+    border: 2px solid var(--more-white);
+}
+.button-scroll {
+    display: block;
+    margin: 0 auto 30px auto;
+}
 footer {
     padding: 2vh 4%;
     background: var(--medium-accent);
@@ -195,7 +220,6 @@ footer {
     grid-template-columns:  1fr 1fr;
     grid-column-gap:        10px;
     grid-row-gap:           10px;
-    /*grid-template-rows:     30px auto auto auto auto auto 100px;*/
     margin-bottom:          30px;
 }
 .grid-sm {
@@ -250,6 +274,70 @@ footer {
     }
 }
 
+/* LOADER ANIMATION */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    display: block;
+}
+.eye {
+	display: inline-block;
+    position: relative;
+    background: var(--more-black);
+    background: radial-gradient(ellipse 20% 125%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%);
+    border-radius: 50%;
+	width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 10px var(--more-accent);
+    margin: 15px;
+    -webkit-animation-name: grow;
+    -webkit-animation-duration: 1s;
+    animation-name: grow;
+    animation-duration: 1s
+}
+.eye:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: var(--more-white);
+    margin: 0 auto;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px var(--less-white);
+}
+@-webkit-keyframes grow {
+    from { -webkit-transform: scale(0); transform: scale(0); }
+    to { -webkit-transform: scale(1); transform: scale(1); }
+}
+@keyframes grow {
+    from { -webkit-transform: scale(0); transform: scale(0); }
+    to { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+/* CONTENT ANIMATION */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+    from { bottom: -100px; opacity: 0 } 
+    to { bottom: 0; opacity: 1 }
+}
+#content {
+    display: none;
+}
+
 /* DESKTOP SIZES AND ABOVE */
 @media screen and (min-width: 1200px) {
     header {
@@ -277,5 +365,11 @@ footer {
     .circle {
         opacity: 1;
         animation: none;
+    }
+    #content {
+        display: block;
+    }
+    #loader {
+        display: none;
     }
 }

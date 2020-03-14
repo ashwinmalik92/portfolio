@@ -32,67 +32,74 @@
       </nav>
     </header>
     <main id="skip">
-      <div class="hero">
-        <div class="hero-item">
-          <h1>Hello there!</h1>
-          <h2>It's paw-some to meet you~</h2>
-        </div>
-        <div class="hero-item" id="hero-img-container">
-          <div class="hero-img">
-            <img src="images/cutout.png" alt="Cut-out image of Winston, a black cat staring at the viewer.">
+      <section id="loader">
+        <div class="eye shadow"></div>
+        <div class="eye shadow"></div>
+      </section>
+      <section id="content" class="animate-bottom">
+        <div class="hero">
+          <div class="hero-item">
+            <h1>Hello there!</h1>
+            <h2>It's paw-some to meet you~</h2>
           </div>
-          <div class="circle" style="animation-delay: 0s"></div>
-          <div class="circle" style="animation-delay: 1s"></div>
-          <div class="circle" style="animation-delay: 2s"></div>
-          <div class="circle" style="animation-delay: 3s"></div>
+          <div class="hero-item" id="hero-img-container">
+            <div class="hero-img">
+              <img src="images/cutout.png" alt="Cut-out image of Winston, a black cat staring at the viewer.">
+            </div>
+            <div class="circle" style="animation-delay: 0s"></div>
+            <div class="circle" style="animation-delay: 1s"></div>
+            <div class="circle" style="animation-delay: 2s"></div>
+            <div class="circle" style="animation-delay: 3s"></div>
+          </div>
         </div>
-      </div>
-      <div id="welcome" class="card-large bg-dark shadow">
-        <h2>My name is Winston.</h2>
-        <p>Welcome to my website. I'm a little hiss-terical when meeting new people so please paw-don me for my shyness. Here, you can learn all about me so that <span class="strike">you'll know to worship me</span> we can soon become best friends fur-ever! 😸</p>
-      </div>
-      <div class="grid">
-        <div class="grid-card shadow bg-accent-medium">
-          <h3>Beginnings</h3>
-          <p>Born: June 4, 2015 in West Lafayette, IN</p>
-          <p>Adopted: November 5, 2016 in Indianapolis, IN</p>
+        <div id="welcome" class="card-large bg-dark shadow">
+          <h2>My name is Winston.</h2>
+          <p>Welcome to my website. I'm a little hiss-terical when meeting new people so please paw-don me for my shyness. Here, you can learn all about me so that <span class="strike">you'll know to worship me</span> we can soon become best friends fur-ever! 😸</p>
         </div>
-        <div class="grid-card shadow bg-accent-less">
-          <h3>Lived</h3>
-          <p>West Lafayette, IN</p>
-          <p>Indianapolis, IN</p>
-          <p>Chicago, IL</p>
-          <p>Ann Arbor, MI</p>
+        <div class="grid">
+          <div class="grid-card shadow bg-accent-medium">
+            <h3>Beginnings</h3>
+            <p>Born: June 4, 2015 in West Lafayette, IN</p>
+            <p>Adopted: November 5, 2016 in Indianapolis, IN</p>
+          </div>
+          <div class="grid-card shadow bg-accent-less">
+            <h3>Lived</h3>
+            <p>West Lafayette, IN</p>
+            <p>Indianapolis, IN</p>
+            <p>Chicago, IL</p>
+            <p>Ann Arbor, MI</p>
+          </div>
+          <div class="grid-card shadow bg-accent-medium">
+            <h3>People I tolerate</h3>
+            <p>Ashwin, Olivia, Alicia, Hao Wei, Mandy, Randy (once or twice)</p>
+          </div>
+          <div class="grid-card shadow bg-accent-less">
+            <h3>Breed</h3>
+            <p>Domestic Shorthair</p>
+          </div>
+          <div class="grid-card shadow bg-accent-medium">
+            <h3>Color</h3>
+            <p>🎵 Back in Black 🎵</p>
+          </div>
+          <div class="grid-card shadow bg-accent-less">
+            <h3>Gender</h3>
+            <p>Male</p>
+          </div>
+          <div class="grid-card shadow bg-accent-medium">
+            <h3>Weight</h3>
+            <p>Around 9 lbs (I have an active lifestyle!)</p>
+          </div>
+          <div class="grid-card shadow bg-accent-less">
+            <h3>Health</h3>
+            <p>Neutered and vaccinated~ Clean record!</p>
+          </div>
+          <div class="grid-card shadow bg-accent-medium">
+            <h3>Crime</h3>
+            <p>Prior jail sentences for biting my owner... Not-so-clean record!</p>
+          </div>
         </div>
-        <div class="grid-card shadow bg-accent-medium">
-          <h3>People I tolerate</h3>
-          <p>Ashwin, Olivia, Alicia, Hao Wei, Mandy, Randy (once or twice)</p>
-        </div>
-        <div class="grid-card shadow bg-accent-less">
-          <h3>Breed</h3>
-          <p>Domestic Shorthair</p>
-        </div>
-        <div class="grid-card shadow bg-accent-medium">
-          <h3>Color</h3>
-          <p>🎵 Back in Black 🎵</p>
-        </div>
-        <div class="grid-card shadow bg-accent-less">
-          <h3>Gender</h3>
-          <p>Male</p>
-        </div>
-        <div class="grid-card shadow bg-accent-medium">
-          <h3>Weight</h3>
-          <p>Around 9 lbs (I have an active lifestyle!)</p>
-        </div>
-        <div class="grid-card shadow bg-accent-less">
-          <h3>Health</h3>
-          <p>Neutered and vaccinated~ Clean record!</p>
-        </div>
-        <div class="grid-card shadow bg-accent-medium">
-          <h3>Crime</h3>
-          <p>Prior jail sentences for biting my owner... Not-so-clean record!</p>
-        </div>
-      </div>
+        <button type="button" class="button-scroll shadow" onclick="topScroll()" title="Back to Top">Back to Top</button>
+      </section>
     </main>
     <footer>
       <div class="footer_content">
@@ -103,5 +110,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/custom.js"></script>
 </body>
 </html>

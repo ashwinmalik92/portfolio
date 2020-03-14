@@ -1,0 +1,49 @@
+/* LOADER ANIMATION */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+}
+.eye {
+	display: inline-block;
+    position: relative;
+    background: var(--more-black);
+	border-radius: 50%;
+	width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 10px var(--more-accent);
+    margin: 15px;
+    -webkit-animation-name: grow;
+    -webkit-animation-duration: 1s;
+    animation-name: grow;
+    animation-duration: 1s
+}
+@-webkit-keyframes grow {
+    from { -webkit-transform: scale(0); transform: scale(0); }
+    to { -webkit-transform: scale(1); transform: scale(1); }
+}
+@keyframes grow {
+    from { -webkit-transform: scale(0); transform: scale(0); }
+    to { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+/* CONTENT ANIMATION */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+    from { bottom: -100px; opacity: 0 } 
+    to { bottom: 0; opacity: 1 }
+}
+#content {
+    display: none;
+}
