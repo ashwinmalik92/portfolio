@@ -19,7 +19,7 @@ body {
     background: var(--less-black);
     font-family: 'Poppins', sans-serif;
 }
-a:hover, a:focus {
+*:hover, *:focus {
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -60,7 +60,6 @@ header {
 }
 .nav_tab a:focus {
     border: 2px solid var(--more-white);
-    border-radius: 10px;
 }
 a.skip {
     font-size: 1.25em;
@@ -74,9 +73,6 @@ a.skip {
     position: absolute;
     z-index: 1;
     text-decoration: none;
-    -webkit-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
 }
 a.skip:focus {
     top: 15px;
@@ -84,9 +80,6 @@ a.skip:focus {
 }
 a.skip:hover {
     background: var(--less-accent);
-    -webkit-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* BODY STYLES */
@@ -147,14 +140,10 @@ button {
 button:hover, button:focus {
     color: var(--more-black);
     background: var(--more-white);
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
+    border: 2px solid transparent;
 }
 button:focus {
-    border: 2px solid var(--more-white);
+    border: 2px solid var(--more-black);
 }
 .button-scroll {
     display: block;
@@ -189,11 +178,6 @@ footer {
 }
 .footer_item a:hover, .footer_item a:focus {
     background: var(--more-accent);
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
 }
 .footer_item a:focus {
     border: 2px solid var(--more-white);
