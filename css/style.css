@@ -3,7 +3,7 @@
     --less-accent: #cad69c;
     --medium-accent: #A8B675;
     --more-accent: #80945D;
-    --less-white: #E6E6E6;
+    --less-white: #D9D9D9;
     --more-white: #F2F2F2;
     --less-black: #262B35;
     --more-black: #17171C;
@@ -20,11 +20,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 *:hover, *:focus {
-    transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 /* HEADER STYLES */
@@ -109,15 +109,6 @@ main p {
 .page-heading {
     margin: 20px 0 30px 0;
 }
-#welcome {
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
-.card-large {
-    background: var(--more-black);
-    border-radius: 20px;
-    padding: 5%;
-}
 .shadow {
     -webkit-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
@@ -126,12 +117,19 @@ main p {
 .strike {
     text-decoration: line-through;
 }
+::-moz-selection {
+    background-color: var(--less-accent);
+}
+::selection {
+    background-color: var(--less-accent);
+}
 
 /* FOOTER STYLES */
 button {
+    font-family: 'Poppins', sans-serif;
     color: var(--more-white);
     background: var(--more-black);
-    padding: 15px;
+    padding: 12px;
     font-size: 1.25em;
     border: 2px solid transparent;
     border-radius: 10px;

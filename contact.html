@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
     <title>Contact Winston</title>
 </head>
 <body>
@@ -40,14 +41,24 @@
                 <h1>Contact Winston</h1>
                 <h2>Fill out this form if you'd like to get in confursation. I'll respond when I feel like it.</h2>
             </div>
-            <div class="form">
-                <form action="https://formspree.io/xvorjepj" method="POST">
-                    <input type="text" name="name">
-                    <input type="email" name="_replyto">
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-            <button type="button" class="button-scroll shadow" onclick="topScroll()">Back to Top</button>
+            <div class="contact shadow"></div>
+            <form action="https://formspree.io/xvorjepj" method="POST">
+                <div class="form">
+                    <div class="form-input">
+                        <label for="name">Name</label>
+                        <input class="shadow" type="text" name="name" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email Address</label>
+                        <input class="shadow" type="email" name="email" id="email" placeholder="Your email address" required>
+                    </div>
+                    <div class="form-input form-message">
+                        <label for="message">Message</label>
+                        <textarea class="shadow" name="message" id="email" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="button-submit shadow">Submit</button>
+            </form>
         </section>
     </main>
     <footer>
