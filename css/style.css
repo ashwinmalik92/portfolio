@@ -121,6 +121,7 @@ main p {
     margin-bottom: 20px;
 }
 .card-large {
+    background: var(--more-black);
     border-radius: 20px;
     padding: 5%;
 }
@@ -128,22 +129,6 @@ main p {
     -webkit-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
-}
-.bg-dark {
-    color: var(--more-white);
-    background: var(--more-black);
-}
-.bg-light {
-    color: var(--more-black);
-    background: var(--less-white);
-}
-.bg-accent-medium {
-    color: var(--more-black);
-    background: var(--medium-accent);
-}
-.bg-accent-less {
-    color: var(--more-black);
-    background: var(--less-accent);
 }
 .strike {
     text-decoration: line-through;
@@ -226,55 +211,19 @@ footer {
     grid-template-columns:  auto;
 }
 .grid-card {
+    color: var(--more-black);
     border-radius: 15px;
     padding: 10%;
 }
-
-/* TABLET SIZES AND ABOVE */
-@media screen and (min-width: 768px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .nav_list li {
-        display: inline;
-    }
-    .nav_tab a {
-        padding: .25vh 20px;
-    }
-    main {
-        min-height: 87vh;
-    }
-    .hero {
-        margin-top: 0;
-        flex-direction: row;
-    }
-    .hero-item {
-        text-align: left;
-    }
-    #hero-img-container {
-        margin-top: 0;
-    }
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .grid-img img {
-        min-width: 100%;
-        max-width: unset;
-        min-height: unset;
-        max-height: 100%;
-    }
-    .footer_content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .footer_item:first-child {
-        margin-bottom: 0;
-        text-align: left;
-    }
+.grid-card:nth-child(odd) {
+    background: var(--medium-accent);
+}
+.grid-card:nth-child(even) {
+    background: var(--less-accent);
 }
 
 /* LOADER ANIMATION */
+/* Adapted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 */
 #loader {
     position: absolute;
     left: 50%;
@@ -336,6 +285,50 @@ footer {
 }
 #content {
     display: none;
+}
+
+/* TABLET SIZES AND ABOVE */
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav_list li {
+        display: inline;
+    }
+    .nav_tab a {
+        padding: .25vh 20px;
+    }
+    main {
+        min-height: 87vh;
+    }
+    .hero {
+        margin-top: 0;
+        flex-direction: row;
+    }
+    .hero-item {
+        text-align: left;
+    }
+    #hero-img-container {
+        margin-top: 0;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-img img {
+        min-width: 100%;
+        max-width: unset;
+        min-height: unset;
+        max-height: 100%;
+    }
+    .footer_content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer_item:first-child {
+        margin-bottom: 0;
+        text-align: left;
+    }
 }
 
 /* DESKTOP SIZES AND ABOVE */
