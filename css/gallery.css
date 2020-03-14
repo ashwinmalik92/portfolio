@@ -4,13 +4,14 @@
     padding: 0;
     border: 2px solid transparent;
     border-radius: 15px;
+    cursor: pointer;
 }
 .flip-content {
     height: 30vh;
     position: relative;
-    transition: transform 0.6s;
+    transition: transform 0.5s;
     transform-style: preserve-3d;
-} 
+}
 .grid-flip:hover .flip-content, .grid-flip:focus .flip-content {
     transform: rotateY(180deg);
 }
@@ -92,4 +93,9 @@
 }
 #img-15 {
     background-image: url('../images/gallery/gallery-15.jpg');
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    .flip-content {
+        transition: transform 0;
+    }
 }
