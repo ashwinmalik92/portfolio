@@ -1,4 +1,4 @@
-/* FORM */
+/* FORM STYLES */
 .form {
     display:                grid;
     grid-template-columns:  1fr;
@@ -8,7 +8,7 @@
 .form-input {
     display: inline-block;
 }
-.form-message {
+.form-input:last-of-type {
     grid-column: 1 / -1;
 }
 .form-input > * {
@@ -25,7 +25,7 @@ label {
     }
 }
 
-/* FIELDS */
+/* FIELD STYLES */
 input, textarea {
     font-family: 'Poppins', sans-serif;
     color: var(--more-black);
@@ -59,18 +59,13 @@ input:focus, textarea:focus {
     opacity: .5;
 }
 
-/* SUBMIT */
+/* SUBMIT STYLES */
 .button-submit {
     margin: 25px auto;
     display: block;
     padding: 10px 12px;
     color: var(--more-black);
     background: var(--medium-accent);
-}
-.button-submit::before {
-    content: url('../images/paw.png');
-    padding-right: 8px;
-    vertical-align: middle;
 }
 .contact {
     width: 100%;

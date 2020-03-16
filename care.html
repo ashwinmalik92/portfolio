@@ -15,10 +15,12 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/care.css">
+    <script src="https://kit.fontawesome.com/a1680fea87.js" crossorigin="anonymous"></script>
     <title>Winston's Care</title>
 </head>
 <body>
-    <a class="skip shadow" href="#skip">Skip to Main Content</a>
+    <a class="skip shadow" href="#skip"><i class="fas fa-forward"></i>&nbsp;&nbsp;Skip to Main Content</a>
     <header>
         <img src="images/brand.png" id="logo" alt="Winston's logo">
         <nav>
@@ -40,15 +42,56 @@
                 <h1>Cat Care</h1>
                 <h2>You've received the privilege of <span class="strike">serving</span> caring for me. What's next?</h2>
             </div>
-            <button type="button" class="button-scroll shadow" onclick="topScroll()">Back to Top</button>
+            <div id="menu" class="shadow">
+                <h3>Contents</h3>
+                <ul>
+                    <li><a href="#hello">Saying hello</a></li>
+                    <li><a href="#food">Food and water</a></li>
+                    <li><a href="#space">Space and exploration</a></li>
+                    <li><a href="#play">Play</a></li>
+                    <li><a href="#rest">Rest</a></li>
+                    <li><a href="#grooming">Grooming</a></li>
+                    <li><a href="#litter">Litter</a></li>
+                </ul>
+            </div>
+            <div id="hello" class="care-section">
+                <h3><i class="fas fa-comment-dots"></i>&nbsp;&nbsp;Saying hello</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <div id="food" class="care-section">
+                <h3><i class="fas fa-drumstick-bite"></i>&nbsp;&nbsp;Food and water</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <div id="space" class="care-section">
+                <h3><i class="fas fa-seedling"></i>&nbsp;&nbsp;Space and exploration</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <div id="play" class="care-section">
+                <h3><i class="fas fa-baseball-ball"></i>&nbsp;&nbsp;Play</h3>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p>
+            </div>
+            <div id="rest" class="care-section">
+                <h3><i class="fas fa-cloud-moon"></i>&nbsp;&nbsp;Rest</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <div id="grooming" class="care-section">
+                <h3><i class="fas fa-shower"></i>&nbsp;&nbsp;Grooming</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <div id="litter" class="care-section">
+                <h3><i class="fas fa-toilet-paper"></i>&nbsp;&nbsp;Litter</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <button type="button" class="button-scroll shadow" onclick="topScroll()"><i class="fas fa-hand-point-up"></i>&nbsp;&nbsp;Back to Top</button>
         </section>
     </main>
     <footer>
         <div class="footer_content">
             <p class="footer_item">&copy; Ashwin Malik 2020<br>Crafted with love for my cat, Winston - and SI 539 at UMich.</p>
             <div class="footer_item">
-                <a href="https://github.com/ashwinmalik92/winston"><img class="footer_img" src="images/github.png" alt="GitHub logo"></a>
-                <a href="https://www.instagram.com/serwinstongram/"><img class="footer_img" src="images/instagram.png" alt="Instagram logo"></a>
+                <a href="https://github.com/ashwinmalik92/winston" aria-label="Visit Winston's website GitHub repository"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/serwinstongram/" aria-label="Visit Winston's Instagram page"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>

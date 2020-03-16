@@ -166,13 +166,11 @@ footer {
     text-align: center;
 }
 .footer_item a {
+    font-size: 2.25em;
+    color: var(--more-black);
     display: inline-block;
     border: 2px solid transparent;
     border-radius: 5px;
-}
-.footer_img {
-    padding: 5px;
-    width: 35px;
 }
 .footer_item a:hover, .footer_item a:focus {
     background: var(--more-accent);
