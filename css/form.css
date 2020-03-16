@@ -78,3 +78,6 @@ input:focus, textarea:focus {
     background-position: center;
     background-attachment: fixed;
 }
+.p-submit {
+    padding-bottom: 25px;
+}
