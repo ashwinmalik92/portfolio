@@ -332,7 +332,7 @@ footer {
     html {
         scroll-behavior: auto;
     }
-    a:hover, a:focus {
+    *:hover, *:focus, a:hover, a:focus {
         transition: none;
         -webkit-transition: none;
         -moz-transition: none;
@@ -341,6 +341,9 @@ footer {
     }
     .circle {
         opacity: 1;
+        animation: none;
+    }
+    .animate-bottom {
         animation: none;
     }
     #content {
