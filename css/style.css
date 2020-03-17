@@ -66,8 +66,8 @@ a.skip {
     font-size: 1.25em;
     color: var(--more-black);
     background: var(--more-white);
-    top: -50px;
-    left: 10px;
+    top: -10vh;
+    left: 15px;
     padding: 12px;
     border: 2px solid transparent;
     border-radius: 8px;
