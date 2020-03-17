@@ -48,7 +48,7 @@
 .back-caption {
     padding: 0 5%;
     color: var(--more-white);
-    font-size: 1.25em;
+    font-size: 1em;
     text-align: center;
 }
 #img-01 {
@@ -95,6 +95,11 @@
 }
 #img-15 {
     background-image: url('../images/gallery/gallery-15.jpg');
+}
+@media screen and (min-width: 768px) {
+    .back-caption {
+        font-size: 1.25em;
+    }
 }
 @media screen and (prefers-reduced-motion: reduce) {
     .flip-content {
