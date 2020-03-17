@@ -40,14 +40,12 @@
     transform: rotateY(180deg);
 }
 .back-date {
-    margin-top: 60px;
-    padding: 0 5%;
+    padding: 20% 5% 5% 5%;
     color: var(--more-white);
     text-align: center;
     text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
 }
 .back-caption {
-    margin-top: 30px;
     padding: 0 5%;
     color: var(--more-white);
     font-size: 1.25em;
